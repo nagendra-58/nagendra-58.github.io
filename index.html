@@ -7,10 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RUX</title>
     <script src="./rum-client.min.js"></script>
- 
-  </head>
-
-  <body>
     <script type="application/javascript">
         let RUMObject = new TrackPerformance({
             trackUrl: `${window.location.origin}/api/track`, // Endpoint at which collected data is sent
@@ -50,8 +46,9 @@
         // If you want to stop tracking manually, use below code
         // RUMObject.stop();
     </script>
-   
-   
+  </head>
+
+  <body> 
     <div class="clock">
       <div class="outer-clock-face">
         <div class="marking marking-one"></div>
