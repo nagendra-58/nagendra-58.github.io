@@ -10,7 +10,7 @@
     <!-- <script src="./path-to-script/rum-client-js/dist/rum-client.min.js"></script> -->
     <script type="application/javascript">
         let RUMObject = new TrackPerformance({
-            trackUrl: `${window.location.origin}/api/track`, // Endpoint at which collected data is sent
+            trackUrl: `https://5f6c2b108d5ef70016ca0790.mockapi.io/code/ruxTrack`, // Endpoint at which collected data is sent
             batchSize: 50, // max entry batch size sent to server
             threshold: 3000, // in ms
             includeHosts: [ // consider entries from these hosts only
