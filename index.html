@@ -5,19 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RUX</title>
-    <script src="./rum-client.min.js"></script>
-    <script type="application/javascript">
-      let RUMObject = new TrackPerformance({
-        trackUrl: `http://54.151.120.250:3001/rux/writePerfomanceMetrics`, // Endpoint at which collected data is sent
-        jwt: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZmlyc3ROYW1lIjoiVGVzdCIsImxhc3ROYW1lIjoiVGVzdDEiLCJlbWFpbCI6Im1vYmVkZXZAcWVudGVsbGkuY29tIiwiY3VzdG9tZXJJZCI6MzgxLCJkZXNpZ25hdGlvbklkIjpudWxsLCJkZXBhcnRtZW50SWQiOm51bGwsImRvbWFpbklkIjoxLCJyb2xlSWQiOjEsInBob25lTnVtYmVyIjpudWxsLCJjb3VudHJ5UGhvbmVDb2RlIjpudWxsLCJwYXNzd29yZCI6IiQyYiQxMCRtZkpVampiMzRzczg3UGdUVC9weHB1TjhLNmJZMC9Fa1Z6emRhcEs3TWtRRHlZcXpRUGwzTyIsImlzQWN0aXZlIjoxLCJkZWZhdWx0VnNtSWQiOm51bGwsImRlZmF1bHRQcm9qZWN0SWQiOm51bGwsImRlZmF1bHRQcm9kdWN0SWQiOjEsImNyZWF0ZWREYXRlIjoiMjAyMi0wOS0wOFQxODowNDo1Ni4wMDBaIiwiY3JlYXRlZEJ5IjoiMSIsInVwZGF0ZWREYXRlIjoiMjAyMi0xMC0xOFQwNToxNDoxOC4wMDBaIiwidXBkYXRlZEJ5IjoiMiIsInByb2R1Y3RzIjpbeyJ1c2VySWQiOjIsInByb2R1Y3RJZCI6MSwicHJvZHVjdE5hbWUiOiJURUQifSx7InVzZXJJZCI6MiwicHJvZHVjdElkIjoyLCJwcm9kdWN0TmFtZSI6Ik1PQkUifSx7InVzZXJJZCI6MiwicHJvZHVjdElkIjozLCJwcm9kdWN0TmFtZSI6IlBBQ0UifV0sIm1vYmVEYk5hbWUiOiJxX21vYmVfdGVuYW50XzM4MSIsImRiTmFtZSI6InFfdGVuYW50XzM4MSIsInRpbWVab25lIjoiKzA1OjMwIiwiaXNDbGllbnRMb2dpbiI6ZmFsc2UsInBhcmVudEN1c3RvbWVySWQiOm51bGwsImlzQWdlbmN5VHlwZSI6MCwib3JnTmFtZSI6IlFlbnRlbGxpIiwibW9iZUxpY2Vuc2VUeXBlIjpudWxsLCJtZW1iZXJTaW5jZSI6IjIwMjItMDktMDggMjM6MzQ6NTYiLCJ2YWxpZFRvIjoiMjAyMi0xMC0wNyAyMzo1OTo1OSIsImlzRXhwaXJlZCI6MSwiZXhwaXJlZEluRGF5cyI6MCwiaXNOZXdUaWVyUHVyY2hhc2VkIjowLCJpYXQiOjE2NjYwNzAxMDEsImV4cCI6MTY2NjExMzMwMX0.bM-AQ3alme-CcydUdbC2HyI86DVh-RsiiaafxkCalL0",
-        batchSize: 50, // max entry batch size sent to server
-        threshold: 3000, // in ms
-        applicationId: "rWWgZwBQ2C",
-        includeHosts: [
-          window.location.host,
-        ],
-        excludeKeys: ["nextHopProtocol", "initiatorType"], // exclude keys from each entry
-      });
+    <script>
+      !(function (I, i, l, Z, m, c) {
+        (c = i.getElementsByTagName("head")[0]),
+          ((m = i.createElement("script")).async = 1),
+          (m.id = "pace"),
+          (m.crossorigin = "anonymous"),
+          (m.src = l + Z),
+          (m.onload = function () {
+            new TrackPerformance({
+              trackUrl: "http://54.151.120.250:3001/rux/writePerfomanceMetrics",
+              jwt: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZmlyc3ROYW1lIjoiVGVzdCIsImxhc3ROYW1lIjoiVGVzdDEiLCJlbWFpbCI6Im1vYmVkZXZAcWVudGVsbGkuY29tIiwiY3VzdG9tZXJJZCI6MzgxLCJkZXNpZ25hdGlvbklkIjpudWxsLCJkZXBhcnRtZW50SWQiOm51bGwsImRvbWFpbklkIjoxLCJyb2xlSWQiOjEsInBob25lTnVtYmVyIjpudWxsLCJjb3VudHJ5UGhvbmVDb2RlIjpudWxsLCJwYXNzd29yZCI6IiQyYiQxMCRtZkpVampiMzRzczg3UGdUVC9weHB1TjhLNmJZMC9Fa1Z6emRhcEs3TWtRRHlZcXpRUGwzTyIsImlzQWN0aXZlIjoxLCJkZWZhdWx0VnNtSWQiOm51bGwsImRlZmF1bHRQcm9qZWN0SWQiOm51bGwsImRlZmF1bHRQcm9kdWN0SWQiOjEsImNyZWF0ZWREYXRlIjoiMjAyMi0wOS0wOFQxODowNDo1Ni4wMDBaIiwiY3JlYXRlZEJ5IjoiMSIsInVwZGF0ZWREYXRlIjoiMjAyMi0xMC0xOFQwNToxNDoxOC4wMDBaIiwidXBkYXRlZEJ5IjoiMiIsInByb2R1Y3RzIjpbeyJ1c2VySWQiOjIsInByb2R1Y3RJZCI6MSwicHJvZHVjdE5hbWUiOiJURUQifSx7InVzZXJJZCI6MiwicHJvZHVjdElkIjoyLCJwcm9kdWN0TmFtZSI6Ik1PQkUifSx7InVzZXJJZCI6MiwicHJvZHVjdElkIjozLCJwcm9kdWN0TmFtZSI6IlBBQ0UifV0sIm1vYmVEYk5hbWUiOiJxX21vYmVfdGVuYW50XzM4MSIsImRiTmFtZSI6InFfdGVuYW50XzM4MSIsInRpbWVab25lIjoiKzA1OjMwIiwiaXNDbGllbnRMb2dpbiI6ZmFsc2UsInBhcmVudEN1c3RvbWVySWQiOm51bGwsImlzQWdlbmN5VHlwZSI6MCwib3JnTmFtZSI6IlFlbnRlbGxpIiwibW9iZUxpY2Vuc2VUeXBlIjpudWxsLCJtZW1iZXJTaW5jZSI6IjIwMjItMDktMDggMjM6MzQ6NTYiLCJ2YWxpZFRvIjoiMjAyMi0xMC0wNyAyMzo1OTo1OSIsImlzRXhwaXJlZCI6MSwiZXhwaXJlZEluRGF5cyI6MCwiaXNOZXdUaWVyUHVyY2hhc2VkIjowLCJpYXQiOjE2NjYwNzAxMDEsImV4cCI6MTY2NjExMzMwMX0.bM-AQ3alme-CcydUdbC2HyI86DVh-RsiiaafxkCalL0",
+              batchSize: 50,
+              threshold: 3e3,
+              applicationId: "rWWgZwBQ2C",
+              includeHosts: [window.location.host],
+              excludeKeys: ["nextHopProtocol", "initiatorType"],
+            });
+          }),
+          c.appendChild(m);
+      })(window, document, "https://nagendra-58.github.io/","rum-client.min.js");
     </script>
   </head>
   <body>
