@@ -5,26 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RUX</title>
-    <script>
-      !(function (n, e, i, t, a, o) {
-        (o = e.getElementsByTagName("head")[0]),
-          ((a = e.createElement("script")).async = 1),
-          (a.id = "pace"),
-          (a.crossorigin = "anonymous"),
-          (a.src = i + t),
-          (a.onload = function () {
+      <script>
+      !(function (n, i, a, t, e, o) {
+        (o = i.getElementsByTagName("head")[0]),
+          ((e = i.createElement("script")).async = 1),
+          (e.id = "pace"),
+          (e.crossorigin = "anonymous"),
+          (e.src = a + t),
+          (e.onload = function () {
             new TrackPerformance({
-              applicationId: "rWWgZwBQ2C",
+              applicationId: "zpafFhlqtO",
+              env: "dev",
               includeHosts: [window.location.host],
             });
           }),
-          o.appendChild(a);
-      })(
-        window,
-        document,
-        "https://nagendra-58.github.io/",
-        "rum-client.min.js"
-      );
+          o.appendChild(e);
+      })(window, document, "https://nagendra-58.github.io/", "rum-client.js");
     </script>
   </head>
   <body>
